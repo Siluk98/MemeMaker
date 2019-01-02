@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.CameraActivity">
+
+    <FrameLayout
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RelativeLayout
+        android:layout_gravity="left|top"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/photo_take"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo_take"/>
+
+            <ImageView
+                android:id="@+id/photo_save"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo_save"/>
+
+            <ImageView
+                android:id="@+id/photo_brightness"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo_brightness"/>
+
+            <ImageView
+                android:id="@+id/photo_color"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo_color"/>
+
+            <ImageView
+                android:id="@+id/photo_size"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo_size"/>
+
+            <ImageView
+                android:id="@+id/photo_flash"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo_flash"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                android:layout_weight="1"
+                android:background="@null" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
